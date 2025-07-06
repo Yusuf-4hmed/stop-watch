@@ -9,7 +9,7 @@ const startTimer = () => {
     if (isRunning) return;
     isRunning = true;
     intervalId = setInterval(() => {milliseconds += 10;
-        console.log(milliseconds)
+        // console.log(milliseconds)
     }, 10)
 }
 
@@ -19,7 +19,7 @@ const pauseButton = document.getElementById('pause-button')
 
 const pauseTimer = () => {
     clearInterval(intervalId)
-    console.log(milliseconds)
+    // console.log(milliseconds)
     isRunning = false;
 }
 
@@ -29,7 +29,7 @@ const resetButton = document.getElementById('reset-button')
 
 const resetTimer = () => {
     milliseconds = 0;
-    console.log(milliseconds)
+    // console.log(milliseconds)
 }
 
 resetButton.addEventListener('click', resetTimer)
